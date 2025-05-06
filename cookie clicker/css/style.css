@@ -1,0 +1,29 @@
+body {
+    background-color: darkcyan;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+main > aside {
+    width: 33%;
+    height: 100vh;
+    display: flex;
+}
+main > section {
+    width: 33%;
+}
+.division {
+    height: 100dvh;
+    width: 10px;
+    background-color: #895129;
+}
+aside {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+aside > #cookiesDisplay {
+    top: 50px;
+}
