@@ -1,17 +1,11 @@
 body {
     background-color: darkcyan;
+    margin: 0;
 }
 main {
-    display: flex;
-    flex-direction: row;
-}
-main > aside {
-    width: 33%;
+    display: grid;
+    grid-template-columns: 300px 10px auto 10px 300px;
     height: 100vh;
-    display: flex;
-}
-main > section {
-    width: 33%;
 }
 .division {
     height: 100dvh;
@@ -19,11 +13,58 @@ main > section {
     background-color: #895129;
 }
 aside {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: flex;
+    width: 100%;
 }
 aside > #cookiesDisplay {
     top: 50px;
+    position: absolute;
+}
+.mainContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContent > .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.store{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    height: 100dvh;
+    padding: 5px;
+    max-width: 500px;
+}
+.tittle{
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.upgrades{
+    grid-area: 2 / 1 / 5 / 2;
+}
+.storeItem{
+    grid-area: 5 / 1 / 11 / 2;
+    background-color: #895129;
+    border-radius: 10px;
+    border: 2px solid #4e2d15;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.itemInfo{
+    display: flex;
+    flex-direction: row;
 }
