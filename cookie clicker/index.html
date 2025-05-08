@@ -10,12 +10,12 @@
 <body>
     <main>
         <aside>
-            <div id="cookiesDisplay">
-                <p>Cookies: 0</p>
-                <p>Cookies per second: 0</p>
+            <div class="cookiesDisplay">
+                <p id="cookiescount">Cookies: 0</p>
+                <p id="cookiespersecond">Cookies per second: 0</p>
             </div>
             <div id="cookie">
-                <img src="./imgs/cookie.webp" alt="Cookie" id="cookieImage" width="300" height="300">
+                <img src="./imgs/cookie.webp" alt="Cookie" id="cookieImage" width="300" height="300" draggable="false" onclick="handleClick()">
             </div>
         </aside>
         <div class="division"></div>
@@ -43,31 +43,7 @@
 
             </div>
             <div class="storeItens">
-                <div class="storeItem" id="cursor">
-                    <div class="itemInfo">
-                        <img src="./imgs/cursor.png" alt="" width="75" height="75">
-                        <div class="itemNameCost">
-                            <h1>cursor</h1>
-                            <p>Cost: 15</p>
-                        </div>
-                    </div>
-                    <p>Amount: 0</p>
-                </div>
-                <div class="storeItem" id="grandma">
-                    <p>Grandma</p>
-                    <p>Cost: 100</p>
-                    <p>Amount: 0</p>
-                </div>
-                <div class="storeItem" id="farm">
-                    <p>Farm</p>
-                    <p>Cost: 1100</p>
-                    <p>Amount: 0</p>
-                </div>
-                <div class="storeItem" id="factory">
-                    <p>Factory</p>
-                    <p>Cost: 12000</p>
-                    <p>Amount: 0</p>
-                </div>
+                
             </div>
         </section>
     </main>

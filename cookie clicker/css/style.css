@@ -1,6 +1,7 @@
 body {
     background-color: darkcyan;
     margin: 0;
+    user-select: none;
 }
 main {
     display: grid;
@@ -19,7 +20,13 @@ aside {
     flex-direction: column;
     width: 100%;
 }
-aside > #cookiesDisplay {
+aside img:hover{
+    cursor: pointer;
+    scale: 1.05;
+    
+}
+
+aside > .cookiesDisplay {
     top: 50px;
     position: absolute;
 }
@@ -63,6 +70,10 @@ aside > #cookiesDisplay {
     align-items: center;
     padding-left: 5px;
     padding-right: 10px;
+}
+.storeItem:hover{
+    cursor: pointer;
+    scale: 1.05;
 }
 .itemInfo{
     display: flex;
